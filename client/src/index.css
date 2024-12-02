@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+iframe#webpack-dev-server-client-overlay {
+  display: none !important;
+}
+
+.ant-table-wrapper.forecast-antd-table.dash-common-table input.ant-input-number-input {
+  padding: 4px 4px;
+}
+
+.person-list-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .ant-tabs .ant-tabs-tab+.ant-tabs-tab {
+    margin: 0 0 0 5px;
+  }
+}

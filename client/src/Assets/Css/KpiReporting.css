@@ -1,0 +1,195 @@
+.kpi-reporting-container .custom-card {
+  padding-bottom: 24px;
+}
+.kpi-reporting-container .custom-card-header {
+  border-bottom: 0;
+}
+.kpi-reporting-container .custom-card-body {
+  margin: 0 24px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.kpi-reporting-container
+  .custom-card-body
+  .ant-table-wrapper.dash-common-table
+  tbody.ant-table-tbody
+  tr
+  td.ant-table-cell::after {
+  background-color: transparent;
+}
+.kpi-reporting-container
+  .custom-card-body
+  ul.ant-pagination.custom-pagination-div {
+  margin: 14px 14px 14px 0;
+}
+.kpi-reporting-container .custom-card-body .ant-table-content {
+  overflow: hidden !important;
+}
+.ant-table-wrapper.kpi-common-table.kpi-report-table .ant-table-content {
+  overflow: auto hidden !important;
+}
+.kpi-reporting-container
+  .custom-card-body
+  .ant-table-wrapper.kpi-common-table.kpi-report-table
+  tbody.ant-table-tbody
+  tr
+  td.ant-table-cell::after {
+  background-color: #ebebeb;
+}
+.ant-table-expanded-row-fixed:has(.kpi-report-table) {
+  background: #fff;
+  padding: 8px 16px;
+}
+.ant-table-wrapper.kpi-report-table thead.ant-table-thead tr th {
+  border-bottom: 0;
+}
+.ant-table-wrapper.kpi-report-table thead.ant-table-thead tr th:first-child {
+  min-width: 340px;
+}
+.ant-table-wrapper.kpi-report-table thead.ant-table-tbody tr {
+  border: 1px solid;
+}
+.ant-table-wrapper.kpi-report-table tbody.ant-table-tbody tr td {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb !important;
+}
+
+.ant-table-wrapper.kpi-common-table.kpi-report-table table {
+  border-spacing: 0 8px;
+}
+
+.ant-table-wrapper.kpi-report-table tbody.ant-table-tbody tr td:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: 1px solid #ebebeb;
+}
+
+.ant-table-wrapper.kpi-report-table tbody.ant-table-tbody tr td:last-child {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-right: 1px solid #ebebeb;
+}
+.kpi-report-table tbody.ant-table-tbody tr:first-child {
+  display: none;
+}
+.kpi-report-name-column {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.kpi-report-name-content p {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  color: #1a1a1a;
+}
+.kpi-report-graph {
+  position: relative;
+  padding: 0 16px;
+}
+.kpi-report-graph::before {
+  position: absolute;
+  top: 50%;
+  inset-inline-end: 0;
+  width: 1px;
+  height: 1.6em;
+  background-color: #ebebeb;
+  transform: translateY(-50%);
+  transition: background-color 0.2s;
+  content: "";
+}
+p.table-unit {
+  padding: 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+p.kpi-reporting-text-box.target-box {
+  padding: 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+.ant-table-wrapper.kpi-report-table
+  tbody.ant-table-tbody
+  tr
+  td:not(first-child) {
+  padding: 0 !important;
+}
+.padding-box-border {
+  padding: 15px 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+p.table-unit:last-child {
+  border-bottom: 0;
+}
+p.kpi-reporting-text-box.target-box:last-child {
+  border-bottom: 0;
+}
+.padding-box-border:last-child {
+  border-bottom: 0;
+}
+.kpi-reporting-container .header-right .ant-select {
+  z-index: 1 !important;
+}
+.kpi-reporting-person-name {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.kpi-reporting-header-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.kpi-count-container {
+  width: auto;
+  height: 24px;
+  padding: 1px 12px 3px 12px;
+  border-radius: 100px;
+  gap: 4px;
+  color: #367ca2;
+  background-color: #e9f3f9;
+  margin-left: 5px;
+  min-width: 32px;
+}
+
+.highlight-text {
+  color: #4b2ca6;
+}
+
+.kpi-current-status {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Inter";
+}
+
+.expand-collapse-icon-container {
+  cursor: pointer;
+}
+
+.expand-collapse-icon-container:focus {
+  outline: none !important;
+}
+
+.expand-collapse-icon-container:focus-within {
+  outline: none !important;
+}
+
+.gray-bg {
+  background-color: #f7f7f7;
+}
+.ant-table-wrapper.kpi-report-table
+  tbody.ant-table-tbody
+  tr
+  td.ant-table-cell
+  span.ant-tag.target-tag {
+  border: 1px solid #cdbfbf !important;
+}
+
+.kpi-reporting-year-select {
+  width: 264px;
+  z-index: 99;
+}
