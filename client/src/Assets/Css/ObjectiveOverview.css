@@ -1,0 +1,5 @@
+.objective-overview-table .ant-input-disabled,
+.objective-overview-table .ant-input[disabled] {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.88);
+}

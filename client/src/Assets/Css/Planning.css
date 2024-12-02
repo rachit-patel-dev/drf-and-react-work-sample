@@ -1,0 +1,137 @@
+.ant-table-wrapper.dash-common-table.planning-overview-table
+  tbody.ant-table-tbody
+  tr
+  td.ant-table-cell
+  label.ant-checkbox-wrapper
+  span.ant-checkbox-inner {
+  border-radius: 4px !important;
+  width: 18px;
+  height: 18px;
+}
+
+.ant-table-wrapper.dash-common-table.planning-overview-table
+  .ant-checkbox-checked
+  .ant-checkbox-inner {
+  background-color: #4b2ca6;
+  border-color: #4b2ca6;
+}
+
+.ant-table-wrapper.dash-common-table.planning-overview-table
+  .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner {
+  background-color: #4b2ca6;
+  border-color: transparent;
+}
+
+.ant-table-wrapper.dash-common-table.planning-overview-table
+  .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-inner,
+.ant-table-wrapper.dash-common-table
+  .ant-checkbox:not(.ant-checkbox-disabled):hover
+  .ant-checkbox-inner {
+  border-color: #4b2ca6;
+}
+
+.planning-content-container {
+  padding: 12px 0;
+}
+
+.planning-content-container > * {
+  margin: 15px 0;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yearly-target-tag {
+  display: flex;
+  padding: 3px 12px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+  border-radius: 100px;
+  background: #f7f7f7;
+}
+
+.kpi-name {
+  color: #449bcb;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.planning-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+}
+.planning-final-tab .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+.planning-tabs {
+  display: flex;
+  width: 1077px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.planning-items {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.planning-item span {
+  color: #4d4d4d;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+}
+.planning-item.item-active span {
+  color: #4b2ca6;
+}
+.planning-item {
+  cursor: pointer;
+}
+
+.planning-overview-table .person-list-item {
+  cursor: pointer;
+}
+
+.planning-overview-table .person-list-item.item-active span {
+  color: #4b2ca6;
+}
+.planning-module-planned-txt {
+  color: #4d4d4d;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.overview-btn-container {
+  display: flex;
+  justify-content: end;
+}
+.planning-q-checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.planning-q-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

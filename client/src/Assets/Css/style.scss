@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import "./default-style";
+
+/*  general css */
+
+/* Colors: */
+:root {
+  --light-yellow-color: #f98d29;
+  --white-color: #fff;
+  --dark-blue-color: #002855;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.display_show {
+  display: block;
+}
+
+.desktop-hidden {
+  display: none;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mr-15 {
+  margin-right: 15px !important;
+}
+
+.mlr-6 {
+  margin-right: -6px !important;
+  margin-left: -6px !important;
+}
+
+.plr-6 {
+  padding-right: 6px !important;
+  padding-left: 6px !important;
+}
+
+.mlr-10 {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+
+.plr-10 {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+.mlr-20 {
+  margin-right: -20px !important;
+  margin-left: -20px !important;
+}
+
+.plr-20 {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+@media (min-width: 1025px) {
+  /* main right content area */
+}
+
+@media (min-width: 1025px) and (max-width: 1490px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}

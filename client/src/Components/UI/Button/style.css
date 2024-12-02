@@ -1,0 +1,20 @@
+button.btn.theme-btn {
+  background: #4b2ca6;
+  border-radius: 8px;
+  border: 1px solid #4b2ca6;
+  padding: 12px 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  height: auto;
+  transition: all 0.2s;
+}
+button.btn.theme-btn:hover,
+button.btn.theme-btn:focus {
+  background: #fff;
+  color: #4b2ca6;
+  border-color: #4b2ca6;
+}

@@ -1,0 +1,133 @@
+.initiative-tracking-header-filter-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+.ant-select.intitiative-tracking-division-select.person-select {
+  width: 50%;
+}
+.ant-select.intitiative-tracking-person-select.person-select {
+  width: 50%;
+}
+.ant-select.intitiative-tracking-person-select.person-select.w-100 {
+  width: 75%;
+}
+.ant-select.intitiative-tracking-person-select.person-select .person-list-item,
+.ant-select.intitiative-tracking-division-select.person-select
+  .person-list-item {
+  flex-wrap: nowrap;
+}
+
+.ant-select.intitiative-tracking-person-select.person-select
+  .person-list-item
+  span,
+.ant-select.intitiative-tracking-division-select.person-select
+  .person-list-item
+  span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ant-select-dropdown.person-dropdown {
+  z-index: 10 !important;
+}
+
+.ant-select-dropdown.person-dropdown.activity-overview-select {
+  z-index: 10 !important;
+}
+
+.division-custom-dropdown .ant-tooltip-open {
+  z-index: 99999 !important;
+}
+
+.initiative-tracking-table
+  .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  cursor: default !important;
+}
+
+.initiative-tracking-table
+  .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector
+  input {
+  cursor: default !important;
+}
+
+.initiative-tracking-table .ant-picker.ant-picker-disabled {
+  cursor: default !important;
+  background: #fff;
+}
+
+.initiative-tracking-table .ant-picker .ant-picker-input > input-disabled,
+.initiative-tracking-table .ant-picker .ant-picker-input > input[disabled] {
+  cursor: default !important;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.initiative-tracking-table .ant-input-disabled,
+.initiative-tracking-table .ant-input[disabled] {
+  cursor: default !important;
+}
+
+.initiative-tracking-table .ant-slider.ant-slider-disabled {
+  cursor: default !important;
+}
+
+.initiative-tracking-actions .ant-picker.ant-picker-disabled {
+  cursor: default !important;
+  background: #fff;
+}
+.ant-select.intitiative-tracking-person-select
+  .ant-select-selection-overflow-item
+  span.ant-select-selection-item,
+.ant-select.intitiative-tracking-division-select
+  .ant-select-selection-overflow-item
+  span.ant-select-selection-item {
+  align-items: center;
+}
+.ant-select.intitiative-tracking-person-select
+  .ant-select-selection-overflow-item
+  span.ant-select-selection-item
+  .person-list-item
+  img {
+  width: 20px;
+  height: 20px;
+}
+.ant-select.intitiative-tracking-person-select
+  .ant-select-selection-overflow-item
+  span.ant-select-selection-item
+  .person-list-item
+  span {
+  font-size: 13px;
+}
+.initiative-tracking-priority-select{
+  width: 120px;
+}
+.initiative-tracking-search-divider{
+  margin: 8px 0;
+}
+.custom-tab-panel.initiative-tracking-table{
+  margin: 10px 0;
+}
+.custom-slider-tracker.intiative-tracking-slider-tracker{
+  width: 74px;
+  pointer-events: none;
+}
+@media (max-width: 991px) {
+  .initiative-tracking-header-filter-container {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .initiative-tracking-header-filter-container {
+    width: 100%;
+    flex-flow: column;
+  }
+  .ant-select.intitiative-tracking-division-select.person-select,
+  .ant-select.intitiative-tracking-person-select.person-select {
+    width: 100%;
+  }
+}
