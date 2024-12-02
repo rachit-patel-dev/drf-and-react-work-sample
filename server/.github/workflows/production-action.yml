@@ -1,0 +1,57 @@
+name: Deployment - Production
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-production:
+    runs-on: [self-hosted, production]
+    strategy:
+      max-parallel: 4
+    defaults:
+      run:
+        working-directory: /home/ubuntu/rest-api-prod/backend/action-runner/_work/framework-backend/framework-backend/
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Create environment variable
+        run: cp /home/ubuntu/rest-api-prod/backend/.env /home/ubuntu/rest-api-prod/backend/sendgrid_templates.json /home/ubuntu/rest-api-prod/backend/action-runner/_work/framework-backend/framework-backend
+
+      - name: Installing Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install gunicorn
+          python -m pip install -r requirements.txt
+
+      - name: Creating Log Folder
+        run: mkdir logs logs/db_query logs/debug logs/warning logs/error logs/info
+
+      - name: Build and collect static files
+        run: python manage.py collectstatic --no-input
+
+      - name: Migrate Database
+        run: python manage.py migrate
+
+      - name: Sync pgviews
+        run: python manage.py sync_pgviews
+
+      # - name: Run test case
+      #   run: python manage.py test --verbosity=3 --exclude-tag=extended_slow --parallel
+
+  deploy-production:
+    needs: build-production
+    runs-on: [self-hosted, production]
+
+    steps:
+      - name: Restart server
+        run: |
+          sudo supervisorctl restart all
+          sudo service nginx restart
